@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weatheria</title>
+    <!-- REMIX ICON -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- MAIN CSS -->
+    <link href="./assets/css/style.css" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="search-container">
+                <form action="" class="form">
+                    <input type="text" name="city" class="form-input" placeholder="Search for Location">
+                </form>
+            </div>
+
+            <div class="logo-container">
+                <a href="./index.html">
+                    <span class="logo-wrapper">
+                        <img src="./images/header-icon.png" class="header-icon" alt="cloud covering sun">
+                        <h2 class="logo">WEATHERIA</h2>
+                    </span>
+                </a>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- MAIN WEATHER -->
+    <section class="container weather-container header-offset">
+        <div class="weather-data">
+            <div class="weather-location">
+                <div class="top">
+                    <div class="location-wrapper">
+                        <p class="location-details">Location, Country</p>
+                        <p class="weather-phrase">Weather</p>
+                    </div>
+                    
+                    <div class="weather-icon-wrapper">
+                        <span class="weather-icon">
+                            <img src="./images/6.png" alt="">
+                        </span>
+
+                    </div>
+                </div>
+            </div>
+            <div class="weather-value">
+                <div class="bottom">
+                    <div class="weather-temp-wrapper">
+                        <span class="weather-temp">°C</span>
+                    </div>
+                    
+                    <div class="weather-title">
+                        <p class="weather-wind">Wind</p>
+                        <p class="weather-real-feel">Real Feel</p>
+                        <p class="weather-visibility">Visibility</p>
+                    </div>
+                    
+                    <div class="weather-value-data">
+                        <p class="weather-wind-value">km/h</p>
+                        <p class="weather-real-feel-value">°C</p>
+                        <p class="weather-visibility-value">km</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- FORECAST CONTAINER -->
+    <section class="container forecast-container">
+        <div class="forecast-wrapper-container">
+            <div class="forecast-data-wrapper">
+                <div class="forecast-title-wrapper">
+                    <span class="daily-forecasts">Daily Forecast</span>
+                </div>
+
+                <div class="forecast-data-value-wrapper">
+                    <div class="forecast-data-value forecast-data-1">
+                        <div class="outside-1">
+                            <div class="forecast-content-wrapper forecast-value-1">
+                                <div class="left">
+                                    <span class="forecast-weather-icon-1">
+                                        <img src="./images/1.png" alt="">
+                                    </span>
+                                    <span class="title">
+                                        Weekday
+                                    </span>
+                                </div>
+                                <div class="right">
+                                    <span class="short-phrase">
+                                        short phrase
+                                    </span>
+                                    <span class="min-max-temp">
+                                        °C / °C
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inside-1 active">
+                            <div class="forecast-data-value-inside-1">
+                                <div class="daytime-container">
+                                    <div class="daytime-title">
+                                        Daytime
+                                    </div>
+                                    <div class="forecast-value-inside">
+                                        <div class="left">
+                                            <div class="title-wrapper">
+                                                <p class="wind">Wind</p>
+                                                <p class="hours-of-sun">Hours of Sun</p>
+                                                <p class="cloud-cover">Cloud Cover</p>
+                                            </div>
+                                            <div class="value-wrapper">
+                                                <p class="wind-value">km/h</p>
+                                                <p class="hours-of-sun-value">hrs</p>
+                                                <p class="cloud-cover-value">%</p>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <div class="title-wrapper">
+                                                <p class="real-feel">Real Feel</p>
+                                                <p class="sun-set">Sun Set</p>
+                                                <p class="precipitation">Precipitation</p>
+                                            </div>
+                                            <div class="value-wrapper">
+                                                <p class="real-feel-value">°C</p>
+                                                <p class="sun-set-value">pm</p>
+                                                <p class="precipitation-value">%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="nightime-container">
+                                    <div class="daytime-title">
+                                        Nightime
+                                    </div>
+                                    <div class="forecast-value-inside">
+                                        <div class="left">
+                                            <div class="title-wrapper">
+                                                <p class="wind">Wind</p>
+                                                <p class="moon-rise">Moon Rise</p>
+                                                <p class="cloud-cover">Cloud Cover</p>
+                                            </div>
+                                            <div class="value-wrapper">
+                                                <p class="wind-value">km/h</p>
+                                                <p class="moon-rise-value">pm</p>
+                                                <p class="cloud-cover-value">%</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="right">
+                                            <div class="title-wrapper">
+                                                <p class="real-feel">Real Feel</p>
+                                                <p class="moon-set">Moon Set</p>
+                                                <p class="precipitation">Precipitation</p>
+                                            </div>
+                                            <div class="value-wrapper">
+                                                <p class="real-feel-value">°C</p>
+                                                <p class="moon-set-value">am</p>
+                                                <p class="precipitation-value">%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="forecast-data-value forecast-data-2">
+                        <div class="outside-2">
+                            <div class="forecast-content-wrapper forecast-value-2">
+                                <div class="left">
+                                    <span class="forecast-weather-icon-2">
+                                        <img src="./images/2.png" alt="">
+                                    </span>
+                                    <span class="title">
+                                        Weekday
+                                    </span>
+                                </div>
+                                <div class="right">
+                                    <span class="short-phrase">
+                                        short phrase
+                                    </span>
+                                    <span class="min-max-temp">
+                                        °C / °C
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inside-2">
+                            <div class="forecast-data-value-inside-2">
+                                <div class="daytime-container">
+                                    <div class="daytime-title">
+                                        Daytime
+                                    </div>
+                                    <div class="forecast-value-inside">
+                                        <div class="left">
+                                            <div class="title-wrapper">
+                                                <p class="wind">Wind</p>
+                                                <p class="hours-of-sun">Hours of Sun</p>
+                                                <p class="cloud-cover">Cloud Cover</p>
+                                            </div>
+                                            <div class="value-wrapper">
+                                                <p class="wind-value">km/h</p>
+                                                <p class="hours-of-sun-value">hrs</p>
+                                                <p class="cloud-cover-value">%</p>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <div class="title-wrapper">
+                                                <p class="real-feel">Real Feel</p>
+                                                <p class="sun-set">Sun Set</p>
+                                                <p class="precipitation">Precipitation</p>
+                                            </div>
+                                            <div class="value-wrapper">
+                                                <p class="real-feel-value">°C</p>
+                                                <p class="sun-set-value">pm</p>
+                                                <p class="precipitation-value">%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="nightime-container">
+                                    <div class="daytime-title">
+                                        Nightime
+                                    </div>
+                                    <div class="forecast-value-inside">
+                                        <div class="left">
+                                            <div class="title-wrapper">
+                                                <p class="wind">Wind</p>
+                                                <p class="moon-rise">Moon Rise</p>
+                                                <p class="cloud-cover">Cloud Cover</p>
+                                            </div>
+                                            <div class="value-wrapper">
+                                                <p class="wind-value">km/h</p>
+                                                <p class="moon-rise-value">pm</p>
+                                                <p class="cloud-cover-value">%</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="right">
+                                            <div class="title-wrapper">
+                                                <p class="real-feel">Real Feel</p>
+                                                <p class="moon-set">Moon Set</p>
+                                                <p class="precipitation">Precipitation</p>
+                                            </div>
+                                            <div class="value-wrapper">
+                                                <p class="real-feel-value">°C</p>
+                                                <p class="moon-set-value">am</p>
+                                                <p class="precipitation-value">%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="forecast-data-value forecast-data-3">
+                        <div class="outside-3">
+                            <div class="forecast-content-wrapper forecast-value-3">
+                                <div class="left">
+                                    <span class="forecast-weather-icon-3">
+                                        <img src="./images/5.png" alt="">
+                                    </span>
+                                    <span class="title">
+                                        Weekday
+                                    </span>
+                                </div>
+                                <div class="right">
+                                    <span class="short-phrase">
+                                        short phrase
+                                    </span>
+                                    <span class="min-max-temp">
+                                        °C / °C
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inside-3">
+                            <div class="forecast-data-value-inside-3">
+                                <div class="daytime-container">
+                                    <div class="daytime-title">
+                                        Daytime
+                                    </div>
+                                    <div class="forecast-value-inside">
+                                        <div class="left">
+                                            <div class="title-wrapper">
+                                                <p class="wind">Wind</p>
+                                                <p class="hours-of-sun">Hours of Sun</p>
+                                                <p class="cloud-cover">Cloud Cover</p>
+                                            </div>
+                                            <div class="value-wrapper">
+                                                <p class="wind-value">km/h</p>
+                                                <p class="hours-of-sun-value">hrs</p>
+                                                <p class="cloud-cover-value">%</p>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <div class="title-wrapper">
+                                                <p class="real-feel">Real Feel</p>
+                                                <p class="sun-set">Sun Set</p>
+                                                <p class="precipitation">Precipitation</p>
+                                            </div>
+                                            <div class="value-wrapper">
+                                                <p class="real-feel-value">°C</p>
+                                                <p class="sun-set-value">pm</p>
+                                                <p class="precipitation-value">%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="nightime-container">
+                                    <div class="daytime-title">
+                                        Nightime
+                                    </div>
+                                    <div class="forecast-value-inside">
+                                        <div class="left">
+                                            <div class="title-wrapper">
+                                                <p class="wind">Wind</p>
+                                                <p class="moon-rise">Moon Rise</p>
+                                                <p class="cloud-cover">Cloud Cover</p>
+                                            </div>
+                                            <div class="value-wrapper">
+                                                <p class="wind-value">km/h</p>
+                                                <p class="moon-rise-value">pm</p>
+                                                <p class="cloud-cover-value">%</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="right">
+                                            <div class="title-wrapper">
+                                                <p class="real-feel">Real Feel</p>
+                                                <p class="moon-set">Moon Set</p>
+                                                <p class="precipitation">Precipitation</p>
+                                            </div>
+                                            <div class="value-wrapper">
+                                                <p class="real-feel-value">°C</p>
+                                                <p class="moon-set-value">am</p>
+                                                <p class="precipitation-value">%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="forecast-data-value forecast-data-4">
+                        <div class="outside-4">
+                            <div class="forecast-content-wrapper forecast-value-4">
+                                <div class="left">
+                                    <span class="forecast-weather-icon-4">
+                                        <img src="./images/6.png" alt="">
+                                    </span>
+                                    <span class="title">
+                                        Weekday
+                                    </span>
+                                </div>
+                                <div class="right">
+                                    <span class="short-phrase">
+                                        short phrase
+                                    </span>
+                                    <span class="min-max-temp">
+                                        °C / °C
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inside-4">
+                            <div class="forecast-data-value-inside-4">
+                                <div class="daytime-container">
+                                    <div class="daytime-title">
+                                        Daytime
+                                    </div>
+                                    <div class="forecast-value-inside">
+                                        <div class="left">
+                                            <div class="title-wrapper">
+                                                <p class="wind">Wind</p>
+                                                <p class="hours-of-sun">Hours of Sun</p>
+                                                <p class="cloud-cover">Cloud Cover</p>
+                                            </div>
+                                            <div class="value-wrapper">
+                                                <p class="wind-value">km/h</p>
+                                                <p class="hours-of-sun-value">hrs</p>
+                                                <p class="cloud-cover-value">%</p>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <div class="title-wrapper">
+                                                <p class="real-feel">Real Feel</p>
+                                                <p class="sun-set">Sun Set</p>
+                                                <p class="precipitation">Precipitation</p>
+                                            </div>
+                                            <div class="value-wrapper">
+                                                <p class="real-feel-value">°C</p>
+                                                <p class="sun-set-value">pm</p>
+                                                <p class="precipitation-value">%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="nightime-container">
+                                    <div class="daytime-title">
+                                        Nightime
+                                    </div>
+                                    <div class="forecast-value-inside">
+                                        <div class="left">
+                                            <div class="title-wrapper">
+                                                <p class="wind">Wind</p>
+                                                <p class="moon-rise">Moon Rise</p>
+                                                <p class="cloud-cover">Cloud Cover</p>
+                                            </div>
+                                            <div class="value-wrapper">
+                                                <p class="wind-value">km/h</p>
+                                                <p class="moon-rise-value">pm</p>
+                                                <p class="cloud-cover-value">%</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="right">
+                                            <div class="title-wrapper">
+                                                <p class="real-feel">Real Feel</p>
+                                                <p class="moon-set">Moon Set</p>
+                                                <p class="precipitation">Precipitation</p>
+                                            </div>
+                                            <div class="value-wrapper">
+                                                <p class="real-feel-value">°C</p>
+                                                <p class="moon-set-value">am</p>
+                                                <p class="precipitation-value">%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="forecast-data-value forecast-data-5">
+                        <div class="outside-5">
+                            <div class="forecast-content-wrapper forecast-value-5">
+                                <div class="left">
+                                    <span class="forecast-weather-icon-5">
+                                        <img src="./images/7.png" alt="">
+                                    </span>
+                                    <span class="title">
+                                        Weekday
+                                    </span>
+                                </div>
+                                <div class="right">
+                                    <span class="short-phrase">
+                                        short phrase
+                                    </span>
+                                    <span class="min-max-temp">
+                                        °C / °C
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inside-5">
+                            <div class="forecast-data-value-inside-5">
+                                <div class="daytime-container">
+                                    <div class="daytime-title">
+                                        Daytime
+                                    </div>
+                                    <div class="forecast-value-inside">
+                                        <div class="left">
+                                            <div class="title-wrapper">
+                                                <p class="wind">Wind</p>
+                                                <p class="hours-of-sun">Hours of Sun</p>
+                                                <p class="cloud-cover">Cloud Cover</p>
+                                            </div>
+                                            <div class="value-wrapper">
+                                                <p class="wind-value">km/h</p>
+                                                <p class="hours-of-sun-value">hrs</p>
+                                                <p class="cloud-cover-value">%</p>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <div class="title-wrapper">
+                                                <p class="real-feel">Real Feel</p>
+                                                <p class="sun-set">Sun Set</p>
+                                                <p class="precipitation">Precipitation</p>
+                                            </div>
+                                            <div class="value-wrapper">
+                                                <p class="real-feel-value">°C</p>
+                                                <p class="sun-set-value">pm</p>
+                                                <p class="precipitation-value">%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="nightime-container">
+                                    <div class="daytime-title">
+                                        Nightime
+                                    </div>
+                                    <div class="forecast-value-inside">
+                                        <div class="left">
+                                            <div class="title-wrapper">
+                                                <p class="wind">Wind</p>
+                                                <p class="moon-rise">Moon Rise</p>
+                                                <p class="cloud-cover">Cloud Cover</p>
+                                            </div>
+                                            <div class="value-wrapper">
+                                                <p class="wind-value">km/h</p>
+                                                <p class="moon-rise-value">pm</p>
+                                                <p class="cloud-cover-value">%</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="right">
+                                            <div class="title-wrapper">
+                                                <p class="real-feel">Real Feel</p>
+                                                <p class="moon-set">Moon Set</p>
+                                                <p class="precipitation">Precipitation</p>
+                                            </div>
+                                            <div class="value-wrapper">
+                                                <p class="real-feel-value">°C</p>
+                                                <p class="moon-set-value">am</p>
+                                                <p class="precipitation-value">%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER CONTAINER -->
+    <!-- <section class="container footer-container">
+        <div class="footer-wrapper-container">
+            This is footer
+        </div>
+    </section> -->
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="./assets/javascript/index.js"></script>
+    <script src="./assets/javascript/app.js"></script>
+</body>
+</html>
